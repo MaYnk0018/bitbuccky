@@ -10,6 +10,10 @@
   "description": "",
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.766.0",
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.6.1",
+    "random-word-slugs": "^0.1.7",
+    "socket.io": "^4.8.1"
   }
 }

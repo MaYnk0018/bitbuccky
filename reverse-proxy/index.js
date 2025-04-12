@@ -32,6 +32,17 @@ proxy.on('proxyReq', function(proxyReq, req, res, options) {
     }
 });
 
+// Add error handling for proxy
+proxy.on('error', (err, req, res) => {
+    console.error('Proxy Error:', err);
+    res.status(500).send('Proxy Error');
+});
+
+// Add stderr handling
+process.stderr.on('data', (data) => {
+    console.error(`[Proxy Error] ${data.toString().trim()}`);
+});
+
 app.listen(PORT, () => {
     console.log(`reverse-proxy is running on port ${PORT}`);
 });
