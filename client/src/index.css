@@ -1,0 +1,49 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: "Kode Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#101820;
+
+}
+
+.topnav{
+  background-color: #182532;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2)
+}
+
+.mcon{
+  background-color: #182532;
+  border-radius: 20px;
+  border: 1px solid #fe5f15;
+}
+.inp{
+  background-color: #101820;
+  color: #fe5f15;
+}
+.bbt{
+  background-color: #101820;
+  color: rgb(194, 194, 194);
+  border: 1px solid #fe5f15;
+}
+.bbt:hover{
+  color: #fe5f15;
+  background-color: #182532;
+}
+.lss{
+  background-color: #182532;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
